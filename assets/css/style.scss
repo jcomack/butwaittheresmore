@@ -4,22 +4,25 @@
 @import "{{ site.theme }}";
 
 $section_width: 960px;
+$section_padding: 20px;
 
 body {
   background: url("../images/science.png");
 }
 
-header {
+header, footer {
+  background: #171717;
   float: none;
   position: relative;
-  width: 100%;
+  width: auto;
+  padding: $section_padding;
 }
 
 section {
   background: #fff;
   float: none;
-  width: $section_width;
-  padding: 20px;
+  width: auto;
+  padding: $section_padding;
 }
 
 .wrapper {
