@@ -9,13 +9,19 @@ body {
   background: url("../images/science.png");
 }
 
+header {
+  float: none;
+  position: relative;
+  width 100%;
+}
+
 section {
   background: #fff;
   float: none;
   width: $section_width;
 }
 
-.wrap {
+.wrapper {
   width: $section_width;
   margin: 0 auto;
 }
