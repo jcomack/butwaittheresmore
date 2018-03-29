@@ -3,10 +3,19 @@
 
 @import "{{ site.theme }}";
 
+$section_width: 960px;
+
 body {
   background: url("../images/science.png");
 }
 
 section {
   background: #fff;
+  float: none;
+  width: $section_width;
+}
+
+.wrap {
+  width: $section_width;
+  margin: 0 auto;
 }
