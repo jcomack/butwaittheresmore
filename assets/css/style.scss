@@ -12,13 +12,14 @@ body {
 header {
   float: none;
   position: relative;
-  width 100%;
+  width: 100%;
 }
 
 section {
   background: #fff;
   float: none;
   width: $section_width;
+  padding: 20px;
 }
 
 .wrapper {
