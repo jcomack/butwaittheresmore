@@ -1,0 +1,125 @@
+---
+layout: default
+title: Vote Team Jimmy on April 24th
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">Give Jimmy your vote</h1>
+				<p class="editable">He puts the 'can' in Canadian.</p>
+				<div class="button">
+					<a href="#donate">Donate Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img src="/images/jimmy.png" alt="Jimmy, eh!">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">Why Jimmy needs your vote</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable">Your vote, your voice</h3>
+			<p class="editable">What makes a company great? Great employees, of course! Vote for Jimmy to ensure we keep Yoast great and have your voice heard, eh! </p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable">Improvement</h3>
+			<p class="editable">As everyone knows, there's always room for improvement. By giving Jimmy your vote, you ensure that change will happen!</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable">Eco-friendly</h3>
+			<p class="editable">Did you know that 406.8 million metric tons of paper are produced every year? Why waste this precious resource on posters? Vote Jimmy!</p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="/images/avatar.png" alt="Jimmy">
+		</div>
+		<div>
+			<h2 class="editable">His Mission</h2>
+
+			<p class="editable">"What's that all aboot?". As you can read, Jimmy doesn't shy away from asking the tough questions. Problems are a foreign concept to him; He only sees challenges and will tackle them, headfirst. His mission is to ensure everyone is represented within the company and demand equality for all. Vote Jimmy! </p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<blockquote>
+		<p class="quote editable">The ultimate measure of Jimmy is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
+				<span class="author editable"><strong>Wooly McBaa</strong></span>
+			</p>
+		</div>
+	</blockquote>
+
+	<blockquote>
+		<p class="quote editable">Do not get lost in a fokky forest. Jimmy will lead zhe way.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/jo.jpg" alt="Jo Bonten"></span>
+				<span class="author editable"><strong>Jo Bonten</strong></span>
+			</p>
+		</div>
+	</blockquote>
+
+	<blockquote>
+		<p class="quote editable">YEAH! LETS GO!</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/sjors.jpg" alt="Rapper Sjors"></span>
+				<span class="author editable"><strong>Rapper Sjors</strong></span>
+			</p>
+		</div>
+	</blockquote>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Join us</h2>
+		<p class="editable" style="text-align: center;">Have we convinced you to vote for Jimmy? Do you want to support his cause? Make sure you choose him on April 24th.</p>
+	</div>
+</div>
+
+<div class="container" id="donate">
+	<h2 class="editable">Make a donation</h2>
+	<div class="donate">
+		At this point in time, Jimmy isn't accepting donations. This is because he believes in honest politics and doesn't want business influencing his ethics. Wow, what a great guy, eh! Vote Jimmy!
+	</div>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Updates</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
