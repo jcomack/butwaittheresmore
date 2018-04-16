@@ -1,0 +1,43 @@
+---
+layout: default
+title: Sorry...
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">Sorry, eh!</h1>
+			</div>
+		</div>
+		<div class="column">
+			<img src="{{ site.baseurl }}/images/jimmy.png" alt="Jimmy, eh!">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">Why does this page exist?</h2>
+
+	<p>We've been wondering the same. And to be honest, we don't really know either. But here it is. You're welcome.</p>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Updates</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
